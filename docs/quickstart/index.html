@@ -35,20 +35,20 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="./assets/images/favicon.png">
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.3">
     
     
       
-        <title>Whitepapers</title>
+        <title>Quickstart - Whitepapers</title>
       
     
     
-      <link rel="stylesheet" href="./assets/stylesheets/application.8d40d89b.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.8d40d89b.css">
       
     
     
-      <script src="./assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -93,7 +93,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#publish-documentation-to-github-with-mkdocs-easily" tabindex="1" class="md-skip">
+      <a href="#quick-start" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -102,7 +102,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="." title="Whitepapers" class="md-header-nav__button md-logo">
+        <a href=".." title="Whitepapers" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -119,7 +119,7 @@
                 Whitepapers
               </span>
               <span class="md-header-nav__topic">
-                Home
+                Quickstart
               </span>
             
           
@@ -234,6 +234,18 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
@@ -244,58 +256,10 @@
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Home
-      </label>
-    
-    <a href="." title="Home" class="md-nav__link md-nav__link--active">
-      Home
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#so-whats-the-problem" title="So, what's the problem?" class="md-nav__link">
-    So, what's the problem?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#the-solution" title="The solution" class="md-nav__link">
-    The solution
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="quickstart/" title="Quickstart" class="md-nav__link">
+    <a href="./" title="Quickstart" class="md-nav__link md-nav__link--active">
       Quickstart
     </a>
+    
   </li>
 
     
@@ -316,29 +280,6 @@
     
   
   
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#so-whats-the-problem" title="So, what's the problem?" class="md-nav__link">
-    So, what's the problem?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#the-solution" title="The solution" class="md-nav__link">
-    The solution
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -349,43 +290,10 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/csansone/whitepapers/edit/master/docs/index.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/csansone/whitepapers/edit/master/docs/quickstart.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="publish-documentation-to-github-with-mkdocs-easily">Publish Documentation To Github With MkDocs -- Easily</h1>
-<p>If you appreciate the simplicity of things like markdown and python, you would probably expect it to be simple to write your project documentation using these tools and get it up on the web for all to see... and it is.</p>
-<h2 id="so-whats-the-problem">So, what's the problem?</h2>
-<p>As often happens in the world of software development, there is no <em>one true way</em> to get this done.</p>
-<ul>
-<li>
-<p>If your project is published to <a href="https://pypi.org/">pypi</a>, you can have your docs hosted on <a href="https://pythonhosted.org/an_example_pypi_project/buildanduploadsphinx.html">pythonhosted</a>. It's awesome that they do this for the community. Your docs have to be written in reStructuredText here though, and I personally don't want to learn a new document syntax at this point in my life, so I looked further.</p>
-</li>
-<li>
-<p>Another generous, free offering is <a href="https://readthedocs.org/">readthedocs</a>. This lets you use markdown and MkDocs (indeed, looking into readthedocs is how I discovered the MkDocs library in the first place.), though it is a second-class citizen to sphinx. I  host a cheat sheet and it works OK. The webhooks took some time to set up initially, and ~95% of the time I just push my repository and it updates on the site. More than once though, I have been able to build my docs locally but have them throw errors on the readthedocs build. I'm a lazy guy, I wanted it to be even <em>easier</em>.</p>
-</li>
-<li>
-<p><code>README.md</code> If your project is on the smaller side and the documentation can fit on a single page (it's the internet, a single page can be quit long, remember), you can put it on the readme page and call it a day. If you can get away with this, I recommend it. It should be noted that until <a href="https://dustingram.com/articles/2018/03/16/markdown-descriptions-on-pypi">only a couple of months ago</a>, pypi description pages <a href="https://coderwall.com/p/qawuyq/use-markdown-readme-s-in-python-modules">would not render markdown</a> without quite a lot of unpleasant hackery.</p>
-</li>
-</ul>
-<h2 id="the-solution">The solution</h2>
-<p>Github has a <a href="">pages</a> feature, where you can publish things from your repository as static html and javascript files.</p>
-<p>Sounds perfect, right? Your docs can go right in the same repository as your code, and boom! Done.</p>
-<p>There's a little bit of a catch, though.</p>
-<p>Github pages, at the time of this writing, offers only three sources from which you can publish:</p>
-<ul>
-<li>
-<p>The <code>master</code> branch itself</p>
-<p>This is OK if you don't mind putting the documentation in a separate repository.</p>
-</li>
-<li>
-<p>A separate branch, named <code>gh-pages</code></p>
-<p>Meh. Having a separate branch with completely different contents than the main project is a bit too <em>magical</em> for me. That said, mkdocs <a href="https://www.mkdocs.org/user-guide/deploying-your-docs/">does support this feature</a> out of the box.</p>
-</li>
-<li>
-<p>The <code>docs</code> directory of your master branch</p>
-<p>Now we're cooking.</p>
-</li>
-</ul>
+                <h1 id="quick-start">Quick Start</h1>
                 
                   
                 
@@ -406,20 +314,20 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-        
-          <a href="quickstart/" title="Quickstart" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
-                  Next
+                  Previous
                 </span>
-                Quickstart
+                Home
               </span>
             </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
           </a>
+        
         
       </nav>
     </div>
@@ -443,9 +351,9 @@
       
     </div>
     
-      <script src="./assets/javascripts/application.b438e6c5.js"></script>
+      <script src="../assets/javascripts/application.b438e6c5.js"></script>
       
-      <script>app.initialize({version:"0.17.3",url:{base:"."}})</script>
+      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
       
     
     

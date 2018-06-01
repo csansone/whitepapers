@@ -2,13 +2,33 @@
     "docs": [
         {
             "location": "/",
-            "text": "Whitepapers",
-            "title": "Whitepapers"
+            "text": "Publish Documentation To Github With MkDocs -- Easily\n\n\nIf you appreciate the simplicity of things like markdown and python, you would probably expect it to be simple to write your project documentation using these tools and get it up on the web for all to see... and it is.\n\n\nSo, what's the problem?\n\n\nAs often happens in the world of software development, there is no \none true way\n to get this done.\n\n\n\n\n\n\nIf your project is published to \npypi\n, you can have your docs hosted on \npythonhosted\n. It's awesome that they do this for the community. Your docs have to be written in reStructuredText here though, and I personally don't want to learn a new document syntax at this point in my life, so I looked further.\n\n\n\n\n\n\nAnother generous, free offering is \nreadthedocs\n. This lets you use markdown and MkDocs (indeed, looking into readthedocs is how I discovered the MkDocs library in the first place.), though it is a second-class citizen to sphinx. I  host a cheat sheet and it works OK. The webhooks took some time to set up initially, and ~95% of the time I just push my repository and it updates on the site. More than once though, I have been able to build my docs locally but have them throw errors on the readthedocs build. I'm a lazy guy, I wanted it to be even \neasier\n.\n\n\n\n\n\n\nREADME.md\n If your project is on the smaller side and the documentation can fit on a single page (it's the internet, a single page can be quit long, remember), you can put it on the readme page and call it a day. If you can get away with this, I recommend it. It should be noted that until \nonly a couple of months ago\n, pypi description pages \nwould not render markdown\n without quite a lot of unpleasant hackery.\n\n\n\n\n\n\nThe solution\n\n\nGithub has a \npages\n feature, where you can publish things from your repository as static html and javascript files.\n\n\nSounds perfect, right? Your docs can go right in the same repository as your code, and boom! Done.\n\n\nThere's a little bit of a catch, though.\n\n\nGithub pages, at the time of this writing, offers only three sources from which you can publish:\n\n\n\n\n\n\nThe \nmaster\n branch itself\n\n\nThis is OK if you don't mind putting the documentation in a separate repository.\n\n\n\n\n\n\nA separate branch, named \ngh-pages\n\n\nMeh. Having a separate branch with completely different contents than the main project is a bit too \nmagical\n for me. That said, mkdocs \ndoes support this feature\n out of the box.\n\n\n\n\n\n\nThe \ndocs\n directory of your master branch\n\n\nNow we're cooking.",
+            "title": "Home"
         },
         {
-            "location": "/#whitepapers",
+            "location": "/#publish-documentation-to-github-with-mkdocs-easily",
+            "text": "If you appreciate the simplicity of things like markdown and python, you would probably expect it to be simple to write your project documentation using these tools and get it up on the web for all to see... and it is.",
+            "title": "Publish Documentation To Github With MkDocs -- Easily"
+        },
+        {
+            "location": "/#so-whats-the-problem",
+            "text": "As often happens in the world of software development, there is no  one true way  to get this done.    If your project is published to  pypi , you can have your docs hosted on  pythonhosted . It's awesome that they do this for the community. Your docs have to be written in reStructuredText here though, and I personally don't want to learn a new document syntax at this point in my life, so I looked further.    Another generous, free offering is  readthedocs . This lets you use markdown and MkDocs (indeed, looking into readthedocs is how I discovered the MkDocs library in the first place.), though it is a second-class citizen to sphinx. I  host a cheat sheet and it works OK. The webhooks took some time to set up initially, and ~95% of the time I just push my repository and it updates on the site. More than once though, I have been able to build my docs locally but have them throw errors on the readthedocs build. I'm a lazy guy, I wanted it to be even  easier .    README.md  If your project is on the smaller side and the documentation can fit on a single page (it's the internet, a single page can be quit long, remember), you can put it on the readme page and call it a day. If you can get away with this, I recommend it. It should be noted that until  only a couple of months ago , pypi description pages  would not render markdown  without quite a lot of unpleasant hackery.",
+            "title": "So, what's the problem?"
+        },
+        {
+            "location": "/#the-solution",
+            "text": "Github has a  pages  feature, where you can publish things from your repository as static html and javascript files.  Sounds perfect, right? Your docs can go right in the same repository as your code, and boom! Done.  There's a little bit of a catch, though.  Github pages, at the time of this writing, offers only three sources from which you can publish:    The  master  branch itself  This is OK if you don't mind putting the documentation in a separate repository.    A separate branch, named  gh-pages  Meh. Having a separate branch with completely different contents than the main project is a bit too  magical  for me. That said, mkdocs  does support this feature  out of the box.    The  docs  directory of your master branch  Now we're cooking.",
+            "title": "The solution"
+        },
+        {
+            "location": "/quickstart/",
+            "text": "Quick Start",
+            "title": "Quickstart"
+        },
+        {
+            "location": "/quickstart/#quick-start",
             "text": "",
-            "title": "Whitepapers"
+            "title": "Quick Start"
         }
     ]
 }

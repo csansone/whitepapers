@@ -2,11 +2,16 @@ site_name: Whitepapers
 site_description: Building Docs on Github with MkDocs
 site_author: Christopher Sansone
 
-repo_url: https://github.com/csansone/Whitepapers
-repo_name: Whitepapers
+repo_url: https://github.com/csansone/whitepapers
+repo_name: whitepapers
+edit_uri: null
 
 theme:
     name: material
 
 docs_dir: docs_raw
 site_dir: docs
+
+pages:
+- Home: index.md
+- Quickstart: quickstart.md
